@@ -1,18 +1,22 @@
-### Push Notifications com Socket.io
+###Push notifications com Socket.io
 
-Este repo foi criado para o post:
-http://rcdevlabs.github.io/2015/02/11/criando-um-server-de-push-notifications-para-notificacoes-em-tempo-real-com-socket-io-e-nodejs/
+#Servidor
+npm install
+node server.js
 
-####Para testar:
+#Cliente
+Abrir vários tabs com o ficheiro recebedor.html, recebedor2.html, recebedor3.html 
+Simula vários clientes em Rooms diferentes
+	#user100 - recebedor.html
+	#user200 - recebedor2.html
+	#user300 - recebedor3.html 
 
-1. Execute o servidor
+#Acções Server->Client
+Envia para todos
+http://localhost:8080/api/notificar?notificacao="hello world”&room=
 
-2. Abra o arquivo recebedor.html
+Envia para user100
+http://localhost:8080/api/notificar?notificacao="hello user100"&room=user100
 
-3. Abra outra janela e acesse: http://localhost:8080/api/notificar?notificacao="isso é uma notificação em tempo real!”
-
-4. volte para a janela do recebedor.html e veja como foi atualizado o conteúdo :)
-
-::octocat::
-"# node-pusher-with-users"  git init git add README.md git commit -m "first commit" git remote add origin git@github.com:brestolho/node-pusher-with-users.git git push -u origin master
-"# node-pusher-with-users" 
+#Stats lista users online
+http://localhost:8080/api/stats
