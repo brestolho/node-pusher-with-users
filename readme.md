@@ -5,11 +5,11 @@ npm install
 node server.js
 
 #Cliente
-Abrir vários tabs com o ficheiro recebedor.html, recebedor2.html, recebedor3.html 
+Abrir vários tabs com o ficheiro user100.html, user200.html, user300.html 
 Simula vários clientes em Rooms diferentes
-	#user100 - recebedor.html
-	#user200 - recebedor2.html
-	#user300 - recebedor3.html 
+	#user100 - user100.html
+	#user200 - user200.html
+	#user300 - user300.html 
 
 #Acções Server->Client
 Envia para todos
